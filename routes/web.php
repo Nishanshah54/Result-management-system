@@ -7,7 +7,7 @@ Route::get('/index', function () {
 });
 Route::get('/',function()
 {
-    return view('Home');
+    return view('RMS_page');
 })->name('mainPages');
 Route::get('/result',function(){
     return view('Result.Result');
@@ -34,3 +34,6 @@ Route::get('/report',function(){
 Route::get('/setting',function(){
     return view('Settings.SettingPage');
 })->name('Setting');
+Route::get('/login',function(){
+    return view('LogManagement.Login');
+})->name('Login');
